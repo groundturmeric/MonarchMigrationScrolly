@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+    <html>
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://unpkg.com/scrollama"></script>
+        <script src="https://unpkg.com/intersection-observer"></script>
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="./style/style.css">
+
+    </head>
+
+    <body>
+
+
+
+        <div id="titleSection">
+            <h1> Monarch Migration</h1>
+        </div>
+
+        <div id="intro">
+
+            <!-- <h1>Monarch Migration</h1> -->
+            <h2>a symbol resilience</h2>
+
+            <p>The annual migration of millions of Monarch butterflies across central and eastern U.S.
+                and southern Canada is one of the most fascinating phenomena we can still witness today.
+            </p>
+
+
+            <p>However, over the last few years, this fragile living wonder has been in affected by various
+                human activities such as agricultural farming changing grasslands into farms, the use of herbicides,
+                deforestation, all of which also contribute to the loss of native milkweed plants, an essential host
+                plant for the Monarch.
+            </p>
+        </div>
+       
+
+        <div id="barchartSection">
+
+            <h2 class="barchartTitle">Total Area Occupied by Monarch Colonies at Overwintering Sites in Mexico</h2>
+            <div id="barChart"></div>
+            <script src="./scriptBars.js"></script>
+
+
+            <p class="barchartP">
+                This data set that can be found on
+                <a href="https://monarchwatch.org/blog/2020/03/13/monarch-population-status-42/" target="_blank"
+                    style="color: #8ebf42">Monarch Watch Club</a>.
+                World Wildlife Fund Mexico in collaboration with CONANP and the Monarch Butterfly Biosphere Reserve
+                (MBBR)
+                announced the total forest area occupied by overwintering monarch colonies today. Eleven (11) colonies
+                were
+                located this winter season with a total area of 2.83 hectares, a 53.22% decrease from the previous
+                season
+                (6.05 ha):
+                <br>
+                <br>
+            </p>
+        </div>
+
+        <div class="mapIntro">
+            <p>
+                Despite all these challenges, the Monarch butterflies successfully complete a
+                most epic annual cycle of migration accomplished in about 4 generations!
+            </p>
+
+            <h2>
+                Monarch Community Science Program
+            </h2>
+            <p>
+                Finding data from this epic migration is very challenging since Monarch Butterflies are not easy to
+                track.
+                I was excited to come across this crowd sourced data set from “Journey North” where users contribute by
+                reporting sightings,
+                this geo located data adds a new lens to observe these migrations throughout the seasons.
+                <a href="https://journeynorth.org/">
+                    <img src="https://journeynorth.org/jnorth/themes/custom/jnorth/logo.png" id="journeyNorthLogo">
+                </a>
+
+
+            </p>
+
+        </div>
+
+
+
+
+
+
+
+
+
+        <h2 class="mapTitle">
+            Interactive Map of Annual Monarch Migrations
+        </h2>
+
+        <section id='scroll'>
+            <!--  graphic container  -->
+            <div class='scroll__graphic'>
+                <!--   actual graphic/chart   -->
+                <div class='chart'>
+                </div>
+            </div>
+
+            <!--  step/text container  -->
+            <div class='scroll__text'>
+
+
+                <div class='step' data-step='1'>
+                </div>
+
+                <h2> Generation 1</h2>
+
+                <div class='step' data-step='1'>
+                    <h2> March </h2>
+                </div>
+                <p>
+                    Generation 1 Monarch eggs are commonly laid on species
+                    of milkweed from late March through April in the southern
+                    United States and northern Mexico.
+                </p>
+
+
+                <div class='step' data-step='3'>
+                    <h2> April </h2>
+                </div>
+                <p>It may take Generation 1 Larvae up to up to 45 days to develop from
+                    eggs to adults ready to start flying north.
+                </p>
+
+
+                <div class='step' data-step='4'>
+                    <h2> May </h2>
+                </div>
+                <p>Generation 1 Adults mate and begin to lay eggs about four days after emerging,
+                    and continue the journey north, laying eggs along the way. They begin to arrive
+                    in the northern US and southern Canada in late May.</p>
+
+                <h2> Generation 2</h2>
+                <div class='step' data-step='5'>
+
+                    <h2> June </h2>
+                </div>
+                <p>Monarchs in Generation 2 are laid throughout much of eastern North
+                    America during the month of June. Generation 2 larvae also eat milkweed species.</p>
+
+                <div class='step' data-step='6'>
+                    <h2> July </h2>
+                </div>
+                <p>Generation 2 Adults emerge in July they fly north as the southern summers can get too
+                    hot and dry. They mate, and lay eggs (Generation 3). Some Generation 3 Monarchs emerge
+                    early enough to reproduce in the northern part of their breeding range. </p>
+
+                <h2> Generation 3 and 4</h2>
+                <div class='step' data-step='7'>
+
+                    <h2> August </h2>
+                </div>
+                <p>Generation 3 individuals that emerge late in August will undergo diapause in order to migrate
+                    south to the overwintering sites in Mexico, with most Generation 4 individuals.
+                    <br>Diapause is a delayed maturity; these young Adults do not reproduce right after
+                    they emerge. as temperatures decrease and daylengths shorten at the end of the summer,
+                    instead of mating and laying eggs, they spend their time drinking nectar and clustering
+                    together in nighttime roosts in preparation for their long journey south.
+                </p>
+
+
+                <div class='step' data-step='8'>
+                    <h2> September </h2>
+                </div>
+                <p>The same Generation flies from their summer habitat in Canada across North America and
+                    converge in central Mexico about 4,000 kilometers away!</p>
+
+
+                <div class='step' data-step='9'>
+                    <h2> October </h2>
+                </div>
+                <p>Most of the monarchs will remain in diapause condition until the following spring,
+                    when they begin to mate in the overwintering colonies.</p>
+
+
+                <div class='step' data-step='10'>
+                    <h2> November </h2>
+                </div>
+                <p>Migratory adults arrive to overwintering sites in central Mexico, around November where
+                    they remain till March. The Monarch's arrival is an epic phenomenon that
+                    coincides with Día de los Muertos (Day of the Dead), which is observed in Mexican
+                    culture between November 1st and 2nd.</p>
+
+                <h2>Overwintering</h2>
+                <div class='step' data-step='11'>
+
+                    <h2> December </h2>
+                </div>
+                <p>Monarchs migrate south spend the winter there because they cannot survive the freezing temperatures
+                    in
+                    the northern parts of their range.
+                    <br>The mega Generation of Monarchs migrate to the mountains of central Mexico, or the Pacific Coast
+                    to
+                    overwinter in areas that are warm enough for them
+                    to spend the winter without freezing, but cool enough for them to not use all their energy when
+                    there isn't much food to eat.
+                </p>
+
+
+                <div class='step' data-step='12'>
+                    <h2> January </h2>
+                </div>
+                <p>This mega Generation of Monarchs remains in 'reproductive diapause' when overwintering.</p>
+
+
+                <div class='step' data-step='13'>
+                    <h2> February </h2>
+                </div>
+                <p>In Spring, the mega Generation will start reproducing land lay the eggs that will become
+                    the new Generation 1 that will be able to begin a new journey north in March. </p>
+
+                <div class='step' data-step='14'>
+                    <h2> Milkweed </h2>
+                </div>
+                <p></p>
+
+
+                <div class='step' data-step='15'>
+
+                </div>
+            </div>
+        </section>
+
+
+        <div class="outro">
+            <!-- <h2> Conclusion </h2> -->
+            <p>Monarchs that overwinter can survive up to 9 months. In contrast,
+                breeding adult monarchs in the spring and summer months need plentiful
+                nectar plants to fuel their reproduction, and usually live only about 1 month.
+            </p>
+            </div>
+
+            <div id="introPics">
+                <div class="column">
+    
+                    <img src="https://cdn.pixabay.com/photo/2017/09/25/22/22/monarch-butterfly-caterpillar-2787009_1280.jpg"
+                        class="img">
+                    <img src=" https://media.istockphoto.com/photos/monarch-and-caterpillar-on-milkweed-plant-picture-id89288958?k=20&m=89288958&s=612x612&w=0&h=UOEEEb32sT-PPtg66X0ZZqiLlFoyRdmQh85Yz2_sfEA=
+              " class="img">
+                    <img src="https://cdn.pixabay.com/photo/2019/03/16/23/59/monarch-4060058_1280.jpg" class="img">
+                    <img src="https://cdn.pixabay.com/photo/2016/10/19/15/49/milkweed-1753257_1280.jpg" class="img">
+                    <img src="https://media.istockphoto.com/photos/monarch-caterpillar-eating-a-large-leaf-picture-id184112978?b=1&k=20&m=184112978&s=170667a&w=0&h=liz8HnF1e2VvylGBquXWIf8cHt3QBitE7cdnXlOA-lE=
+        " class="img">
+                    <img src="https://cdn.pixabay.com/photo/2016/12/22/20/23/monarch-1926184_1280.jpg" class="img">
+                </div>
+    
+            </div>
+
+            <div class="sources">
+            <h2> Sources</h2>
+            <p>
+                <ul>
+                    <li>
+
+                   
+                I wish to thank <a href="https://journeynorth.org/" target="_blank"
+                style="color: #8ebf42">Journey North</a> for providing this dataset. I also wish to thank all the observers who
+                contributed data for the project.
+                    </li>
+  
+                 
+                <li>
+                <a href="https://inhabitat.com/whats-causing-the-decline-in-monarch-butterfly-populations/" target="_blank"
+                    style="color: #8ebf42">INHABITAT: </a>What’s causing the decline in monarch butterfly populations?
+                </li>
+
+                <li>
+
+                <a href="https://monarchjointventure.org/monarch-biology/annual-life-cycle" target="_blank"
+                    style="color: #8ebf42">Annual Life Cycle:</a>.
+                </li>
+            </ul>
+
+            </p>
+
+        </div>
+
+
+
+        <!-- <div class="chart" class="container-fluid"> -->
+        </div>
+        <script src="scriptMapScrolly.js"></script>
+    </body>
+
+
+
+
+    </html>

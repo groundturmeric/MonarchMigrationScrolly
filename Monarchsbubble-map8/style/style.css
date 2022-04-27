@@ -1,0 +1,400 @@
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.8;
+    /* background-color: antiquewhite; */
+    background-color: #E5E0B4;
+    margin: 0;
+    color:#5B6023;;
+
+}
+
+#titleSection {
+    text-align: center;
+    /* color: var(--color); */
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://images.pexels.com/photos/1564634/pexels-photo-1564634.jpeg);
+    background-size: cover;
+    background-position: center;
+    /*  this is where the magic happens:  */
+    background-attachment: fixed;
+}
+
+#titleSection h1 {
+    font-size: 34px;
+    /* margin-left: 13vw; */
+    color: #ffffff;
+}
+
+
+
+
+
+
+#intro {
+    margin-left: 13vw;
+    /* margin-right: auto; */
+    margin-bottom: 10vh;
+    /* align-items: center; */
+    /* justify-content: center; */
+    max-width: 34rem;
+    /* text-align: center */
+    color:#5B6023;
+    
+    
+}
+
+
+#intro h2 {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    color:#5B6023;;
+}
+
+#introPics {
+    display: flex;
+    margin-bottom: 8vh;
+    margin-left: 13vw;
+
+}
+
+
+.column {
+    display: block;
+    margin-right: .5vw;
+    width: 100%;
+}
+
+
+
+
+.img:hover{
+	opacity: 1;
+  	bottom: .78vw;
+}
+
+#journeyNorthLogo{
+    height: 21vh;
+    float: right;
+    margin-left: 13vw;
+
+}
+.img {
+    height: 34vh;
+    position: relative;
+	transition: .2s;
+}
+
+#barchartSection {
+    /* align-items: center;
+    justify-content: center; */
+    /* float: right; */
+    margin-bottom: 5vh;
+}
+
+.barchartP {
+    font-size: 13px;
+    float: left;
+    /* margin-right:100px; */
+    /* margin-left:1vh; */
+    max-width: 13rem;
+}
+
+
+.barchartTitle {
+    margin-left: 13vw;
+    font-size: 16px;
+}
+
+
+
+#barChart {
+    margin-left: 13vw;
+
+    position: relative;
+    width: 55vw;
+    height: 34vh;
+    max-width: 55vw;
+    max-height: 34vh;
+
+    margin-top: 3vh;
+
+    float: left;
+
+    /* margin-left: auto; */
+    /* margin-right: auto;
+ */
+
+}
+
+
+.labels {
+    font-family: sans-serif;
+    font-size: 12px;
+    /* fill: #3c373d; */
+}
+
+
+
+
+.axis {
+    font-size: 10pt;
+    color: #000000;
+    opacity: 1;
+}
+
+.axisLabel {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12pt;
+    font-weight: bold;
+    text-anchor: middle;
+    opacity: 0.6;
+
+
+}
+
+
+
+.mapIntro {
+    margin-top: 8vh;
+    margin-left: 13vw;
+    float: left;
+    /* float:left; */
+    /* margin-right:100px; */
+    max-width: 34rem;
+
+}
+
+
+.mapTitle {
+    float: left;
+    margin-left: 13vw;
+    margin-top: 3vw;
+    margin-bottom: 13vh;
+    /* font-size: 16px; */
+}
+
+.continent {
+    /* fill: #ededed; */
+    /* fill: #5f625f; */
+    /* fill: #939393;  good */
+    fill: #a8ab92;
+    /* fill: #efae2c; */
+    /* fill: #a08693; light purple */
+    /* fill:rgb(160, 153, 144); */
+    /* opacity: 0.3; */
+    /* stroke: #d0d0d0; */
+    /* stroke-width: 0.1; */
+    /* background-color: rgb(6, 6, 188); */
+}
+
+
+
+
+
+
+
+
+
+
+.outro {
+    max-width: 500px;
+    padding: 20px;
+    z-index: 301;
+    margin-left: 13vw;
+    
+}
+
+.sources {
+    background: #DDDEA2;
+    /* max-width: 500px; */
+    padding: 8rem;
+    z-index: 301;
+    /* margin-left: 13vw;
+    margin-right:13vw; */
+}
+
+
+
+svg {
+
+    /* background-color: rgb(179, 210, 237); */
+
+}
+
+
+
+
+
+/* SCROLLY STYLE */
+
+
+
+
+/* all scrolling positions set to relative */
+#scroll {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+.chart {
+    position: relative;
+}
+
+#map-svg {
+    width: 50vw;
+    height: 100vh;
+    position: relative;
+}
+
+.mapTooltip {
+    width: 13rem;
+    /* height: 5rem; */
+    max-height: fit-content;
+    position: absolute;
+    visibility: hidden;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 9pt;
+    line-height: 14pt;
+
+    color: rgb(255, 255, 255);
+    /* background: lightsteelblue; */
+    background-color: #636f63c3;
+    border-radius: 8px;
+    /* text-align: center;	 */
+    /* background-color: rgba(0, 0, 0, 0.8); */
+    padding: 15px;
+    top: 0px;
+    left: 0px;
+
+    opacity: 1;
+    pointer-events: none;
+
+}
+
+.barTooltip {
+    width: 13rem;
+    position: absolute;
+    visibility: hidden;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 9pt;
+    line-height: 14pt;
+
+    color: rgba(255, 255, 255, 1);
+    /* background: lightsteelblue; */
+    background-color: #636f63c3;
+    /* background: rgba(86, 112, 103, 0.493); */
+    border-radius: 8px;
+    /* text-align: center;	 */
+    /* background-color: rgba(0, 0, 0, 0.8); */
+    padding: 15px;
+    top: 0px;
+    left: 0px;
+
+    opacity: 1;
+    pointer-events: none;
+}
+
+#scroll .scroll__graphic .chart {
+    position: relative;
+    /* background-color: rgba(164, 139, 190, 0.8); */
+}
+
+/* set scroll graphic to absolute and lock in the position */
+.scroll__graphic {
+    position: absolute;
+    top: 0%;
+    /* bottom: 50%; */
+    left: 0;
+    /* width: 100vw; */
+    /* z-index: -1; */
+    /* z-index: 1; */
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+/* remain fixed when inside the "sticky" area */
+.scroll__graphic.is-fixed {
+    position: sticky;
+    /* max-width: 50vw; */
+}
+
+/* when at bottom of "sticky" area section, remove fixed position */
+.scroll__graphic.is-bottom {
+    bottom: 0;
+    /* top: auto; */
+}
+
+
+/* .scroll__text {
+    float: right;
+    padding: 0 1rem;
+    max-width: 30rem;
+    margin: 0 auto;
+    flex: 1 0 80%;
+} */
+
+.scroll__text {
+    margin-left: 10vw;
+    margin-right: auto;
+    margin-bottom: 10vh;
+    align-items: center;
+    justify-content: center;
+    max-width: 34rem;
+
+}
+
+.step {
+    /* opacity: 0.5; */
+    opacity: 0.3;
+    padding: 1rem;
+    max-width: 8vw;
+    max-height: 1vh;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    height: fit-content;
+
+}
+
+.step.is-active {
+    /* transition: opacity; */
+    /* transition-duration: 0.5s; */
+    opacity: 1;
+    z-index: 1;
+    height: fit-content;
+    /* background-color: #fe4545; */
+}
+
+.step p {
+    /* transition: opacity; */
+    /* transition-duration: 0.5s; */
+    margin: 0 auto;
+    /* height: 300px; */
+    height: fit-content;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid gray;
+
+}
+
+/* circle {
+    fill: purple;;
+    opacity: 0.7;
+} */
